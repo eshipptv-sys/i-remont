@@ -1,8 +1,0 @@
-{
-  "name": "i-remont-monorepo",
-  "private": true,
-  "workspaces": ["backend", "frontend"],
-  "scripts": {
-    "lint": "npm run lint -w backend && npm run lint -w frontend"
-  }
-}
