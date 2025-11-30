@@ -1,0 +1,16 @@
+{
+  "expo": {
+    "name": "WhatsAppLikeChat",
+    "slug": "whatsapp-like-chat",
+    "version": "1.0.0",
+    "sdkVersion": "51.0.0",
+    "platforms": ["ios", "android", "web"],
+    "orientation": "portrait",
+    "assetBundlePatterns": ["**/*"],
+    "extra": {
+      "eas": {
+        "projectId": "local"
+      }
+    }
+  }
+}
