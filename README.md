@@ -1,2 +1,3 @@
-# i-remont
-тест репозитория
+# i-Remont Shop
+
+Интернет-магазин i-Remont.
