@@ -3,8 +3,8 @@
 Интернет-магазин техники и сервисного центра i-Remont на React + Express + PostgreSQL.
 
 ## Структура
-- `frontend/` — клиент на React, TypeScript, Vite, Tailwind CSS.
-- `backend/` — API на Node.js, Express, Prisma.
+- `frontend/` — клиент на React, TypeScript, Vite, React Router.
+- `backend/` — API на Node.js, Express, Prisma, JWT.
 - `docs/` — документация и инструкции.
 
 ## Предварительные требования
@@ -13,7 +13,6 @@
 - Docker (для быстрого подъема PostgreSQL)
 
 ## Шаги запуска
-
 ### 1. Клонирование и зависимости
 ```bash
 npm install --workspaces
@@ -58,6 +57,7 @@ npm run dev
 - `DATABASE_URL` — строка подключения PostgreSQL.
 - `PORT_BACKEND` — порт сервера Express.
 - `FRONTEND_URL` — адрес фронтенда для CORS.
+- `JWT_SECRET` — секрет для подписи JWT.
 
 ## Данные для проверки
-Seed-скрипт создает несколько iPhone, AirPods, Apple Watch, Dyson и PlayStation. Запустите `npx prisma db seed`, затем откройте `/catalog` или `/product/:slug` для проверки.
+Seed-скрипт создает администратора `admin@i-remont.ru / admin123`, категории (iPhone, iPad, Watch, AirPods, Accessories) и примеры товаров (iPhone 15 Pro, AirPods Pro 2). После `npx prisma db seed` откройте `/catalog` или `/product/:slug` для проверки. Админ-панель — `/admin`.
